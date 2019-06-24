@@ -1,82 +1,208 @@
 <!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Andrew Reyes</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    
+</head>
+
 <html lang="en">
-	<head>
+    <body>
 
-		<title>Andrew Reyes / About Me</title>
+        <header>
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
+            <div class="container">
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent-7">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          <!-- Navbar -->
+          <!-- Full Page Intro -->
+          <div class="view" style="background-image: url('images/dtSeattle.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;">
+            <!-- Mask & flexbox options-->
+            <div class="mask rgba-black-light align-items-center">
+              <!-- Content -->
+              <div class="container" id="headings">
+                <!--Grid row-->
+                <div class="row">
+                  <!--Grid column-->
+                  <div class="col-md-12 mb-4 white-text text-center">
+                    <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>Full Stack Web Developer</strong></h5>
+                    <h1 class="h1-reponsive white-text text-uppercase font-weight-bold mb-0 wow fadeInDown" data-wow-delay="0.3s"><strong>Andrew Reyes</strong></h1>
+                    <hr class="hr-light my-4 wow fadeInDown" data-wow-delay="0.4s">
+                    <h5 class="text-uppercase mb-4 white-text wow fadeInDown" data-wow-delay="0.4s"><strong>JavaScript | Node | Express | SQL | HTML | CSS | MongoDB </strong></h5>
+                  </div>
+                  <!--Grid column-->
+                </div>
+                <!--Grid row-->
+              </div>
+              <!-- Content -->
+            </div>
+            <!-- Mask & flexbox options-->
+          </div>
+          <!-- Full Page Intro -->
+        </header>
+        <!-- Main navigation -->
+        <!--Main Layout-->
+        <main>
+          <div class="gray-bg">
+            <div class="container">
+              <!--Grid row-->
+              <div class="row py-5">
+                <!--Grid column-->
+                <div class="col-md-6 justify-content-center">
+                    <div class="card">
+                        <img src="images/selfie.jpeg" alt="Avatar" class= "img" style="width:100%">
+                        <div class="container">
+                          <h4><b>Andrew Reyes</b></h4> 
+                          <p>Full Stack Web Developer</p>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-md-6">
+                  <h2>About Me</h2>
+                  <br>
+                  <p>
+                    I graduated with a B.A. in Human Development from Washington State University. Since graduating in 2015, I've worked 2 years in HR type roles and 2 years in Education as a Before and After School Program Manager for the Issaquah School District. As a kid, I used to build website layouts with HTML and CSS as a preferred hobby but never pursued it as a career until now.
+                  </p>
 
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<script
-		  src="https://code.jquery.com/jquery-3.2.1.min.js"
-		  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-		  crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-		<link rel="stylesheet" href="./assets/css/style.css">
-	</head>
-	<body>
-		<nav class="navbar navbar-default">
-		  <div class="container">
-		    <div class="navbar-header">
-		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-		        <span class="sr-only">Toggle navigation</span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		        <span class="icon-bar"></span>
-		      </button>
-		      <a class="navbar-brand" href="#">Andrew Reyes</a>
-		    </div>
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		      <ul class="nav navbar-nav navbar-right">
-		        <li class="active"><a href="#">About</a></li>
-		        <li><a href="portfolio.html">Projects</a></li>
-		        <li><a href="contact.html">Contact</a></li>
-		      </ul>
-		    </div>
-		  </div>
-		</nav>
+                  <p>
+                    After taking one free Javascript class online, it definitely re-kindled my flame for pursuing a career as a Web Developer. Coding challenges me in ways I've never been pushed before and there is no better feeling than solving those bumps in the roads that take hours maybe days to debug. 
+                  </p>
 
-		<div class="container">
-			<div class="row">
-				<div class="main col-md-8">
-					<div class="row">
-						<div class="col-md-3">
-							<img class="img-circle pad img-responsive" src="assets/images/AJR.jpg" alt="Photo of Andrew Reyes">
-						</div>
-						<div class="col-md-8">
-							<h1 class="page-title">ABOUT ME</h1>
-							<h2 class="lead">Full-Stack Web Developer in Training</h2>
-							<p>
-								Graduated from Washington State University in 2015 with a B.A. in Human Develpment.
-							</p>
-							<p>
-								A career working in over 5 years of Retail, 2 years in Human Resources, and 2 years in Education have molded me into being a great asset for a team-like environment.
-							</p>
-							<p>Experienced with multiple programming languages that include: Javascript, JQuery, Node JS, CSS, and HTML.</p>
-							<p>
-								I have always had a passion for technology and have now immersed myself in the culture of Web Development. I have an eye for spotting out bugs in code and delivering quality feedback, but I do enjoy working on the UI aspects of applications.
-							</p>
-						</div>
-						<div class="col-md-1">&nbsp;</div>
-					</div> 
-				</div> 
+                  <p>
+                    In my freetime, my passion is to DJ. I've been DJing for a couple of years now and am slowly securing gigs around the Greater Seattle area night life. 
+                  </p>
+                  <div class="row justify-content-center">
+                    <a href="images/resume.pdf" class="btn btn-secondary" target="_blank">My Resume</a>
+                  </div>
+                </div>
+                <!--Grid column-->
+              </div>
+              <!--Grid row-->
+            </div>
+          </div>
 
-				<div class="col-md-1">&nbsp;</div>
+    <div class="container" id="portfolio">
+    <div class="row justify-content-center mt-5">
+        <h2>MY PROJECTS</h2>
+    </div>
+    <div class="row justify-content-center mt-4">
+      <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/plateful.png" alt="Card image" height="300px" width="200px">
+          <div class="card-body">
+              <h4 class="card-title">Plateful</h4>
+              <p>Enter in as many leftover ingredients you have at home and Plateful will give you recipes to cook. You can also plan out your meal plan for 3 days!</p>
+              <hr>
+              <a href="https://safe-earth-40129.herokuapp.com/signin" class="btn btn-secondary">Website</a>
+              <a href="https://github.com/andrwjrdn/Project2" class="btn">GitHub</a>
+          </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/Bug.jpg" alt="Card image" height="300px" width="200px">
+          <div class="card-body">
+              <h4 class="card-title">IDBug</h4>
+              <p>Feeling sick? Enter in your symptoms and IDBug will identify a possible diagnosis and directions to the nearest specialized Doctor.</p>
+              <hr>
+              <a href="https://andrwjrdn.github.io/Project-1/" class="btn btn-secondary">Website</a>
+              <a href="https://github.com/andrwjrdn/Project-1" class="btn">GitHub</a>
+          </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/nbaLegends.jpg" alt="Card image" height="300px" width="200px">
+          <div class="card-body">
+              <h4 class="card-title">Friend Finder: NBA Legend Edition</h4>
+              <p>Match up with an NBA legend by filling out the questionnaire! Your answers dictate which NBA legend you're most compatible with.</p>
+              <hr>
+              <a href="https://frozen-hamlet-64646.herokuapp.com/" class="btn btn-secondary">Website</a>
+              <a href="https://github.com/andrwjrdn/FriendFinder" class="btn">GitHub</a>
+          </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="images/mcburgs.jpg" alt="Card image" height="300px" width="200px">
+          <div class="card-body">
+              <h4 class="card-title">Burger DB</h4>
+              <p>Create your own burger, or choose one from our delicious menu and get ready to eat!</p>
+              <hr>
+              <a href="https://radiant-ridge-66111.herokuapp.com/index" class="btn btn-secondary">Website</a>
+              <a href="https://github.com/andrwjrdn/burger" class="btn">GitHub</a>
+          </div>
+      </div>
+      <div class="card" style="width: 20rem;">
+        <img class="card-img-top" src="images/bamazon.png" alt="Card image" height="300px" width="200px">
+        <div class="card-body">
+            <h4 class="card-title">Bamazon</h4>
+            <p>A MySQL database built with a node.js back-end. This Amazon-esque CLI application allows users to view products, purchase a product, and select the quantity they need.</p>
+            <hr>
+            <a href="https://github.com/andrwjrdn/bamazon" class="btn">GitHub</a>
+        </div>
+    </div>
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top" src="images/amethyst.jpg" alt="Card image" height="300px" width="200px">
+      <div class="card-body">
+          <h4 class="card-title">Crystal Collector Game</h4>
+          <p>When the page loads, a random number will appear above the 4 crystals. Each Crystal will have a random unknown value until clicked. Give it a try!</p>
+          <hr>
+          <a href="https://andrwjrdn.github.io/unit-4-game/" class="btn">Website</a>
+          <a href="https://github.com/andrwjrdn/unit-4-game.git" class="btn">GitHub</a>
+      </div>
+  </div>
+   
+    <div class="row justify-content-center mt-4">
+        <h5>More Projects Coming Soon</h5>
+    </div>
+  </div>
 
-				<div class="sidebar col-md-3">
-					<h2 class="sidebar-title">Connect with Me</h2>
-					<ul class="social">
-						<li><a href="https://github.com/andrwjrdn/" target="_blank"><i class="fa fa-github-square" aria-hidden="true"></i></a></li>
-						<li><a href="https://www.linkedin.com/in/andrwjrdn" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a></li>
-						<li><a href="./assets/images/resume.pdf" target="_blank"><i class="fas fa-file"></i></a></li>
-					</ul>
-				</div> 
-			</div> 
-		</div> 
-		<footer class="footer">
-			&copy; Copyright 2019 Andrew Reyes
-		</footer>
-	</body>
+  <div class="container" id="contact">
+
+      <div class="row justify-content-center mt-5">
+        <h2>Contact Me</h2>
+      </div>
+
+    <div class="row justify-content-center" id="email">
+      <div class="col-md-6 mt-3 mb-3">
+        <p>EMAIL</p>
+        <p>andrewjordanreyes@gmail.com</p>
+      </div>
+      <div class="col-md-6 mt-3 mb-3">
+        <p>PHONE</p>
+        <p>(360) 481 - 8868</p>
+      </div>
+    </div>
+    <!--Main Layout-->
+
+    <div class='row justify-content-center' id="links">
+        <nav>
+            <ul>
+                <li><a href="https://github.com/andrwjrdn" class="links" target="_blank">GITHUB</a></li>
+                <li>|</li>
+                <li><a href="https://www.linkedin.com/in/andrew-reyes-05b262108/" class="links" target="_blank">LINKEDIN</a></li>
+                <li>|</li>
+                <li><a href="images/resume.pdf" class="links" target="_blank">RESUME</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    </body>
 </html>
