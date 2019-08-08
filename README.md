@@ -1,3 +1,3 @@
 # Portfolio
 
-https://benderb64.github.io/Portfolio/
+https://andrwjrdn.github.io/MainPortfolio/

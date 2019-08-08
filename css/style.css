@@ -120,3 +120,7 @@ a.links:hover {
 img {
   border-radius:10px;
 }
+
+.fixed-top {
+  position: absolute !important;
+}
