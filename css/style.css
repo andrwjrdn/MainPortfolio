@@ -5,10 +5,11 @@ header,
   height: 100%;
 }
 
-
 .fixed-top {
   position: absolute !important;
 }
+
+
 @media (max-width: 740px) {
   html,
   body,
@@ -125,3 +126,6 @@ img {
   border-radius:10px;
 }
 
+#navBarSupportedContent-7 {
+  position: absolute;
+}
